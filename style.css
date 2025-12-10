@@ -1,0 +1,120 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0px;
+  padding: 0px;
+
+}
+.hero-image{
+  background-image:url("1.jpg");
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;        
+  background-position: center center;  
+  background-size: cover;  
+margin: 0%
+
+}
+
+header {
+  background-color: #000000;
+  color:rgb(208, 16, 16);
+  padding: 1px;
+  font-family: 'Courier New', Courier, monospace;
+  
+}
+
+nav {
+  background-color: #d7dfe8;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: red;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color:#0b45f1d0;
+}
+
+
+main{
+  
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;  
+  margin: 20px;   
+}
+main h1 ,h3,p,ul {
+  color: #fafafa;
+  text-align: center;
+  font-size: 25px;
+  font-family:'Bebas Neue', sans-serif ;
+font-size: 3em;
+  padding: 10px;
+  border-radius: 8px;
+}
+main.class p{
+  font-size: 35px;
+  font-family:'Roboto' sans-serif;
+  font-weight: bold;
+}
+main h2 {
+  width: 100%;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
+  text-align: center;
+  font-family:'Roboto', sans-serif;
+   font-size: 70px;
+  background: linear-gradient(270deg,#ff0000,#b00e0e);
+  background-size: 600% 600%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+ text-shadow: #fafafa;
+  animation: gradientShift 0.1s infinite alternate;
+}
+
+@keyframes gradientShift {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 50% 50%;}
+  100% {background-position: 0% 50%;}
+}
+ 
+
+.hero {
+  padding: 100px 20px;
+  background: url('fitness-bg.jpg') no-repeat center center/cover;
+  color: white;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+.hero h2 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  font-family: 'Bebas Neue', sans-serif;
+}
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+.btn {
+  background: #ff5722;
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.btn:hover {
+  background: #e64a19;
+}
+
+footer {
+  background-color: #004080;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
