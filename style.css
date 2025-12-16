@@ -68,6 +68,7 @@ main ul {
 
 main h1 {
   font-size: clamp(28px, 5vw, 50px);
+  
 }
 
 main h2 {
@@ -82,7 +83,7 @@ main h2 {
 
 main p {
   font-size: clamp(16px, 2.5vw, 22px);
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .hero {
@@ -90,6 +91,7 @@ main p {
   background: url('fitness-bg.jpg') no-repeat center/cover;
   color: white;
   text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+  font: 1em  'Bebas Neue',sans-serif;
 }
 
 .hero h2 {
@@ -145,5 +147,3 @@ footer {
     padding: 80px 20px;
   }
 }
-
-
