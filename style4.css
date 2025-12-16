@@ -1,38 +1,4 @@
-body {
-  font-family: Arial, sans-serif;
-  background-image:url('4.jpg');
-  background-size: cover;
 
-
-  margin: 0;
-  padding: 0;
-
-}
-
-header {
-  background-color: #000000;
- color:rgb(208, 16, 16);
-  padding: 1px;
-  font-family: 'Courier New', Courier, monospace;
-  
-}
-
-nav {
-  background-color: #d7dfe8;
-  padding: 10px;
-  text-align: center;
-}
-
-nav a {
-  color: rgb(216, 37, 37);
-  text-decoration: none;
-  margin: 0 15px;
-  font-weight: bold;
-}
-
-nav a:hover {
-  color:#0b45f1d0;
-}
 
 
 main{

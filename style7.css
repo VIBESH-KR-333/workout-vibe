@@ -1,50 +1,68 @@
- body {
-    font-family: Arial, sans-serif;
-    background: #f7f9fc;
-    color: #333;
-    line-height: 1.6;
-    padding: 20px;
-  }
-  .container {
-    max-width: 800px;
-    margin: auto;
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  }
-  h1 {
-    text-align: center;
-    color: #ff2222;
-  }
-  .meal {
-    margin-bottom: 15px;
-    padding: 10px;
-    background: #e9f5f3;
-    border-left: 5px solid #ff2222;
-  }
-  .back-btn {
-    display: inline-block;
-    padding: 10px 15px;
-    background: #ff2222;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-bottom: 15px;
-  }
-  .back-btn:hover {
-    background: #000000;
-  }
-  .meal label {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-  }
-  .meal input[type="checkbox"] {
-    margin-right: 10px;
-    transform: scale(1.2);
-  }
-  .meal input[type="checkbox"]:checked + span {
-    text-decoration: line-through;
-    color: #ff2222;
-  }
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f9fc;
+  color: #333;
+  line-height: 1.6;
+  padding: clamp(12px, 3vw, 20px);
+  margin: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+  padding: clamp(15px, 4vw, 20px);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #ff2222;
+  font-size: clamp(24px, 5vw, 36px);
+}
+
+.meal {
+  margin-bottom: 15px;
+  padding: 12px;
+  background: #e9f5f3;
+  border-left: 5px solid #ff2222;
+  font-size: clamp(14px, 2.5vw, 16px);
+}
+
+.back-btn {
+  display: inline-block;
+  padding: 10px 16px;
+  background: #ff2222;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-size: clamp(14px, 2.5vw, 16px);
+}
+
+.back-btn:hover {
+  background: #000;
+}
+
+.meal label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 10px;
+}
+
+.meal input[type="checkbox"] {
+  transform: scale(1.2);
+  flex-shrink: 0;
+}
+
+.meal input[type="checkbox"]:checked + span {
+  text-decoration: line-through;
+  color: #ff2222;
+}

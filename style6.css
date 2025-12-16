@@ -1,103 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #f9f9f9;
-    margin: 0;
-    padding: 0;
-    color: #333;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  color: #333;
 }
 
 header {
-    background-color: #ff5722;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
+  background-color: #ff5722;
+  color: #fff;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: clamp(24px, 5vw, 40px);
 }
 
 nav {
-    background-color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background-color: #fff;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
 }
 
 nav a {
-    color: #ff5722;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
-    transition: color 0.3s;
+  color: #ff5722;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
 }
 
 nav a:hover {
-    color: #e64a19;
+  color: #e64a19;
 }
 
 main {
-    max-width: 900px;
-    margin: 30px auto;
-    padding: 0 20px;
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 15px;
 }
 
 .section-card {
-    background-color: #fff;
-    padding: 20px 25px;
-    margin-bottom: 25px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
 
 .section-card h2 {
-    color: #ff2222;
-    margin-bottom: 15px;
+  color: #ff2222;
+  margin-bottom: 15px;
+  font-size: clamp(20px, 4vw, 28px);
+}
+
+.section-card p,
+.section-card li {
+  font-size: clamp(15px, 2.5vw, 18px);
 }
 
 .workout-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 15px;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  font-size: clamp(14px, 2.5vw, 16px);
 }
 
-.workout-table th, .workout-table td {
-    border: 1px solid #ddd;
-    padding: 12px;
-    text-align: center;
+.workout-table th,
+.workout-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
 }
 
 .workout-table th {
-    background-color: #ff2222;
-    color: white;
+  background-color: #ff2222;
+  color: #fff;
 }
 
 .workout-table tr:nth-child(even) {
-    background-color: #f5f5f5;
+  background-color: #f5f5f5;
 }
 
 .workout-table tr:hover {
-    background-color: #ff0000;
+  background-color: #ff0000;
+  color: #fff;
+}
+
+ul {
+  padding-left: 20px;
 }
 
 ul li {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .back-btn-container {
-    text-align: center;
-    margin: 20px 0;
+  text-align: center;
+  margin: 30px 0;
 }
 
 .back-btn {
-    display: inline-block;
-    background-color: #ff2222;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: background-color 0.3s, transform 0.2s;
+  display: inline-block;
+  background-color: #ff2222;
+  color: #fff;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
 .back-btn:hover {
-    background-color: #000000;
-    transform: scale(1.05);
+  background-color: #000;
+  transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+  .workout-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
 }
