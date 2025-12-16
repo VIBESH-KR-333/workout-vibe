@@ -77,7 +77,7 @@ main h2 {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  animation: gradientShift 3s infinite alternate;
+  animation: gradientShift 0.1s infinite alternate;
 }
 
 main p {
@@ -145,4 +145,5 @@ footer {
     padding: 80px 20px;
   }
 }
+
 
